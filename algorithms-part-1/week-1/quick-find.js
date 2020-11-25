@@ -24,12 +24,14 @@ class QuickFind {
   }
 }
 
-const quickFind = new QuickFind(5);
+const quickFind = new QuickFind(10);
 quickFind.union(0, 1);
 quickFind.union(2, 3);
 quickFind.union(3, 4);
-quickFind.union(0, 2);
+quickFind.union(5, 1);
+quickFind.union(9, 7);
 
-console.log(quickFind.areConnected(2, 4));
+
+console.log(quickFind.areConnected(0, 9));
 
 console.log(quickFind.elements);
