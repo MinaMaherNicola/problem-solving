@@ -11,14 +11,12 @@ const birthdayCakeCandles = candles => {
   let maxHolder = candles[0];
   let maxCounter = 0;
   for (let i = 0; i < candles.length; i++) {
-    if (maxHolder < candles[i]) {
-      maxHolder = candles[i];
-    }
-  }
-
-  for (let i = 0; i < candles.length; i++) {
     if (maxHolder === candles[i]) {
       maxCounter++;
+    }
+    if (maxHolder < candles[i]) {
+      maxCounter = 1;
+      maxHolder = candles[i];
     }
   }
   return maxCounter;
