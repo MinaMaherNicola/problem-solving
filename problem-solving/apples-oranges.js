@@ -40,8 +40,6 @@ const counter = (startingPoint, endingPoint, applesTree, orangesTree, applesDis,
         applesDis[i] += applesTree;
         if (applesDis[i] >= startingPoint && applesDis[i] <= endingPoint) {
             applesCounter++;
-        } else {
-            continue;
         }
     }
     for (let i = 0; i < orangesDis.length; i++) {
