@@ -1,13 +1,13 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
 const arrSize = prompt();
 let candlesHeight = prompt();
-candlesHeight = candlesHeight.split(' ');
+candlesHeight = candlesHeight.split(" ");
 for (let i = 0; i < arrSize; i++) {
   candlesHeight[i] = parseInt(candlesHeight[i]);
 }
 
-const birthdayCakeCandles = candles => {
+const birthdayCakeCandles = (candles) => {
   let maxHolder = candles[0];
   let maxCounter = 0;
   for (let i = 0; i < candles.length; i++) {
@@ -20,7 +20,6 @@ const birthdayCakeCandles = candles => {
     }
   }
   return maxCounter;
-}
+};
 
 console.log(birthdayCakeCandles(candlesHeight));
-// new nlienrfweingft'wel;gmfs;
