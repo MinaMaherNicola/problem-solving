@@ -23,3 +23,4 @@ const birthdayCakeCandles = candles => {
 }
 
 console.log(birthdayCakeCandles(candlesHeight));
+// new nlienrfweingft'wel;gmfs;
